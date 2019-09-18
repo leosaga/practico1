@@ -22,7 +22,6 @@ Partial Class FormGastos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormGastos))
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
         Me.txtnfactura = New System.Windows.Forms.TextBox
         Me.dtpFecha = New System.Windows.Forms.DateTimePicker
@@ -159,11 +158,10 @@ Partial Class FormGastos
         Me.Button1.Text = "Agregar"
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'FormServicios
+        'FormGastos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(507, 505)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.BtnAceptar)
@@ -177,7 +175,7 @@ Partial Class FormGastos
         Me.Controls.Add(Me.dtpFecha)
         Me.Controls.Add(Me.txtnfactura)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Name = "FormServicios"
+        Me.Name = "FormGastos"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormServicios"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -72,19 +72,19 @@ Partial Class FormMenuPrincipal
         'RubrosToolStripMenuItem1
         '
         Me.RubrosToolStripMenuItem1.Name = "RubrosToolStripMenuItem1"
-        Me.RubrosToolStripMenuItem1.Size = New System.Drawing.Size(213, 26)
+        Me.RubrosToolStripMenuItem1.Size = New System.Drawing.Size(212, 26)
         Me.RubrosToolStripMenuItem1.Text = "Rubros"
         '
         'ProveedoresToolStripMenuItem1
         '
         Me.ProveedoresToolStripMenuItem1.Name = "ProveedoresToolStripMenuItem1"
-        Me.ProveedoresToolStripMenuItem1.Size = New System.Drawing.Size(213, 26)
+        Me.ProveedoresToolStripMenuItem1.Size = New System.Drawing.Size(212, 26)
         Me.ProveedoresToolStripMenuItem1.Text = "Proveedores"
         '
         'StockDeProductosToolStripMenuItem
         '
         Me.StockDeProductosToolStripMenuItem.Name = "StockDeProductosToolStripMenuItem"
-        Me.StockDeProductosToolStripMenuItem.Size = New System.Drawing.Size(213, 26)
+        Me.StockDeProductosToolStripMenuItem.Size = New System.Drawing.Size(212, 26)
         Me.StockDeProductosToolStripMenuItem.Text = "Stock de Productos"
         '
         'ClientesToolStripMenuItem1
@@ -134,7 +134,6 @@ Partial Class FormMenuPrincipal
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(935, 698)
         Me.Controls.Add(Me.Label1)

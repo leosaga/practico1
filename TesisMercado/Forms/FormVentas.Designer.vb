@@ -55,7 +55,7 @@ Partial Class FormVentas
         Me.Label11 = New System.Windows.Forms.Label
         Me.Label12 = New System.Windows.Forms.Label
         Me.TextBox8 = New System.Windows.Forms.TextBox
-        Me.TextBox9 = New System.Windows.Forms.TextBox
+        Me.txtTotal = New System.Windows.Forms.TextBox
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -68,7 +68,7 @@ Partial Class FormVentas
         Me.btnEliminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnEliminar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnEliminar.Location = New System.Drawing.Point(182, 445)
+        Me.btnEliminar.Location = New System.Drawing.Point(174, 496)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(118, 34)
         Me.btnEliminar.TabIndex = 20
@@ -81,7 +81,7 @@ Partial Class FormVentas
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnCancelar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnCancelar.Location = New System.Drawing.Point(459, 446)
+        Me.btnCancelar.Location = New System.Drawing.Point(459, 496)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(132, 34)
         Me.btnCancelar.TabIndex = 17
@@ -155,7 +155,7 @@ Partial Class FormVentas
         Me.btnAceptar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnAceptar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAceptar.Location = New System.Drawing.Point(306, 434)
+        Me.btnAceptar.Location = New System.Drawing.Point(306, 484)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(147, 46)
         Me.btnAceptar.TabIndex = 33
@@ -369,7 +369,7 @@ Partial Class FormVentas
         Me.DataGridView1.Location = New System.Drawing.Point(4, 279)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(777, 106)
+        Me.DataGridView1.Size = New System.Drawing.Size(777, 124)
         Me.DataGridView1.TabIndex = 40
         '
         'Label1
@@ -377,7 +377,7 @@ Partial Class FormVentas
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(171, 394)
+        Me.Label1.Location = New System.Drawing.Point(193, 440)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 41
@@ -386,7 +386,7 @@ Partial Class FormVentas
         'TextBox1
         '
         Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(240, 391)
+        Me.TextBox1.Location = New System.Drawing.Point(261, 433)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
         Me.TextBox1.Size = New System.Drawing.Size(47, 20)
@@ -397,7 +397,7 @@ Partial Class FormVentas
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(319, 394)
+        Me.Label11.Location = New System.Drawing.Point(332, 440)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(53, 13)
         Me.Label11.TabIndex = 44
@@ -408,7 +408,7 @@ Partial Class FormVentas
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(461, 394)
+        Me.Label12.Location = New System.Drawing.Point(501, 440)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(31, 13)
         Me.Label12.TabIndex = 46
@@ -417,27 +417,27 @@ Partial Class FormVentas
         'TextBox8
         '
         Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(388, 391)
+        Me.TextBox8.Location = New System.Drawing.Point(409, 433)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(47, 20)
         Me.TextBox8.TabIndex = 47
         '
-        'TextBox9
+        'txtTotal
         '
-        Me.TextBox9.Enabled = False
-        Me.TextBox9.Location = New System.Drawing.Point(510, 391)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.ReadOnly = True
-        Me.TextBox9.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox9.TabIndex = 48
+        Me.txtTotal.Enabled = False
+        Me.txtTotal.Location = New System.Drawing.Point(557, 437)
+        Me.txtTotal.Name = "txtTotal"
+        Me.txtTotal.ReadOnly = True
+        Me.txtTotal.Size = New System.Drawing.Size(47, 20)
+        Me.txtTotal.TabIndex = 48
         '
         'FormVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(785, 484)
-        Me.Controls.Add(Me.TextBox9)
+        Me.ClientSize = New System.Drawing.Size(785, 534)
+        Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label1)
@@ -498,5 +498,5 @@ Partial Class FormVentas
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents txtTotal As System.Windows.Forms.TextBox
 End Class

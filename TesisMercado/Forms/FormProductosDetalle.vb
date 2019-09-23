@@ -59,7 +59,7 @@ Public Class FormProductosDetalle
         txtCodigo.Text = pro.codigo
         txtPrecio.Text = pro.Precio
         txtCantidad.Text = pro.cantidad
-        txtIdRubro.Text = pro.id_Rubro
+        cmbRubro.Text = pro.id_Rubro
         txtGanancia.Text = pro.Ganancia
         txtPrecioVenta.Text = pro.precio_venta
 
@@ -77,7 +77,7 @@ Public Class FormProductosDetalle
             pro.codigo = txtCodigo.Text
             pro.Precio = txtPrecio.Text
             pro.cantidad = txtCantidad.Text
-            pro.id_Rubro = txtIdRubro.Text
+            pro.id_Rubro = cmbRubro.Text
             pro.Ganancia = txtGanancia.Text
             pro.precio_venta = txtPrecioVenta.Text
 

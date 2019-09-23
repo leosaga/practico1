@@ -55,14 +55,14 @@ Public Class Gastos
     End Property
 
 
-    Public Property Fechapago() As Date
-        Get
-            Return Fechapago_
-        End Get
-        Set(ByVal value As Date)
-            Fechapago_ = value
-        End Set
-    End Property
+    'Public Property Fechapago() As Date
+    '    Get
+    '        Return Fechapago_
+    '    End Get
+    '    Set(ByVal value As Date)
+    '        Fechapago_ = value
+    '    End Set
+    'End Property
 
 
     Public Sub Agregar(ByVal gasto As Gastos)

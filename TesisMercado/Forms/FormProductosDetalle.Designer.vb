@@ -40,10 +40,10 @@ Partial Class FormProductosDetalle
         Me.txtGanancia = New System.Windows.Forms.TextBox
         Me.Label9 = New System.Windows.Forms.Label
         Me.txtPrecioVenta = New System.Windows.Forms.TextBox
-        Me.txtIdRubro = New System.Windows.Forms.TextBox
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.cmbRubro = New System.Windows.Forms.ComboBox
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -207,15 +207,6 @@ Partial Class FormProductosDetalle
         Me.txtPrecioVenta.Size = New System.Drawing.Size(100, 20)
         Me.txtPrecioVenta.TabIndex = 8
         '
-        'txtIdRubro
-        '
-        Me.txtIdRubro.Enabled = False
-        Me.txtIdRubro.Location = New System.Drawing.Point(101, 241)
-        Me.txtIdRubro.Name = "txtIdRubro"
-        Me.txtIdRubro.ReadOnly = True
-        Me.txtIdRubro.Size = New System.Drawing.Size(60, 20)
-        Me.txtIdRubro.TabIndex = 6
-        '
         'btnCancelar
         '
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
@@ -244,14 +235,22 @@ Partial Class FormProductosDetalle
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'cmbRubro
+        '
+        Me.cmbRubro.FormattingEnabled = True
+        Me.cmbRubro.Location = New System.Drawing.Point(101, 241)
+        Me.cmbRubro.Name = "cmbRubro"
+        Me.cmbRubro.Size = New System.Drawing.Size(121, 21)
+        Me.cmbRubro.TabIndex = 18
+        '
         'FormProductosDetalle
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(264, 399)
+        Me.Controls.Add(Me.cmbRubro)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
-        Me.Controls.Add(Me.txtIdRubro)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.txtPrecioVenta)
         Me.Controls.Add(Me.Label8)
@@ -294,8 +293,8 @@ Partial Class FormProductosDetalle
     Friend WithEvents txtGanancia As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents txtPrecioVenta As System.Windows.Forms.TextBox
-    Friend WithEvents txtIdRubro As System.Windows.Forms.TextBox
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents cmbRubro As System.Windows.Forms.ComboBox
 End Class

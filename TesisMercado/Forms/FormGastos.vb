@@ -32,16 +32,21 @@ Public Class FormGastos
 
     End Sub
 
-    Private Sub BtnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnAceptar.Click
+    Private Sub BtnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
 
 
 
     End Sub
 
-    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Close()
     End Sub
 
 
+   
+    Private Sub BtnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCerrar.Click
+        Close()
+
+    End Sub
 End Class

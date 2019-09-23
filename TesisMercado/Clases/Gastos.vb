@@ -2,9 +2,12 @@
 Imports System.Data
 Imports System.Data.SqlClient
 Public Class Gastos
-    Dim Id_, Nfactura_, Idproveedor_ As Integer
-    Dim Monto_, Pago_ As Decimal
-    Dim Fecha_, Fechapago_ As Date
+    Dim Id_, Nfactura_ As Integer
+    Dim Monto_ As Decimal
+    Dim Fecha_ As Date
+    Dim Descripcion_ As String
+
+
 
     Public Property Id() As Integer
         Get
@@ -23,14 +26,7 @@ Public Class Gastos
             Nfactura_ = value
         End Set
     End Property
-    Public Property Idproveedor() As Integer
-        Get
-            Return Idproveedor_
-        End Get
-        Set(ByVal value As Integer)
-            Idproveedor_ = value
-        End Set
-    End Property
+   
     Public Property Monto() As Decimal
         Get
             Return Monto_
@@ -39,12 +35,12 @@ Public Class Gastos
             Monto_ = value
         End Set
     End Property
-    Public Property Pago() As Decimal
+    Public Property Descripcion() As String
         Get
-            Return Pago_
+            Return Descripcion_
         End Get
-        Set(ByVal value As Decimal)
-            Pago_ = value
+        Set(ByVal value As String)
+            Descripcion_ = value
         End Set
     End Property
 
@@ -73,18 +69,16 @@ Public Class Gastos
 
         Dim conex As New Conexion
 
-        Dim sqlComando As New SqlCommand("ClientesAgregar", conex.sqlconexion)
+        Dim sqlComando As New SqlCommand("GastosAgregar", conex.sqlconexion)
 
         conex.abrir()
 
         sqlComando.CommandType = CommandType.StoredProcedure
-
-        sqlComando.Parameters.AddWithValue("@Id_proveedor", gasto.Idproveedor)
-        sqlComando.Parameters.AddWithValue("@Nro_factura", gasto.Nfactura)
-        sqlComando.Parameters.AddWithValue("@monto", gasto.Monto)
         sqlComando.Parameters.AddWithValue("@fecha", gasto.Fecha)
-        sqlComando.Parameters.AddWithValue("@pago", gasto.Pago)
-        sqlComando.Parameters.AddWithValue("@fecha_pago", gasto.Fechapago)
+        sqlComando.Parameters.AddWithValue("@Nro_factura", gasto.Nfactura)
+        sqlComando.Parameters.AddWithValue("@descripcion", gasto.descripcion)
+        sqlComando.Parameters.AddWithValue("@monto", gasto.Monto)
+
         sqlComando.ExecuteNonQuery()
         conex.cerrar()
 

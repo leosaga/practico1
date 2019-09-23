@@ -23,7 +23,6 @@ Partial Class FormRubroDetalle
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormRubroDetalle))
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.Label1 = New System.Windows.Forms.Label
@@ -39,10 +38,9 @@ Partial Class FormRubroDetalle
         Me.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnCancelar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnCancelar.Location = New System.Drawing.Point(221, 111)
-        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCancelar.Location = New System.Drawing.Point(166, 90)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(116, 44)
+        Me.btnCancelar.Size = New System.Drawing.Size(87, 36)
         Me.btnCancelar.TabIndex = 3
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -52,10 +50,9 @@ Partial Class FormRubroDetalle
         Me.btnAceptar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnAceptar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAceptar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnAceptar.Location = New System.Drawing.Point(21, 111)
-        Me.btnAceptar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAceptar.Location = New System.Drawing.Point(16, 90)
         Me.btnAceptar.Name = "btnAceptar"
-        Me.btnAceptar.Size = New System.Drawing.Size(116, 44)
+        Me.btnAceptar.Size = New System.Drawing.Size(87, 36)
         Me.btnAceptar.TabIndex = 2
         Me.btnAceptar.Text = "Aceptar"
         Me.btnAceptar.UseVisualStyleBackColor = False
@@ -65,21 +62,19 @@ Partial Class FormRubroDetalle
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(52, 21)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(39, 17)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(21, 17)
+        Me.Label1.Size = New System.Drawing.Size(18, 13)
         Me.Label1.TabIndex = 14
         Me.Label1.Text = "ID"
         '
         'txtId
         '
         Me.txtId.Enabled = False
-        Me.txtId.Location = New System.Drawing.Point(145, 21)
-        Me.txtId.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtId.Location = New System.Drawing.Point(109, 17)
         Me.txtId.Name = "txtId"
         Me.txtId.ReadOnly = True
-        Me.txtId.Size = New System.Drawing.Size(79, 22)
+        Me.txtId.Size = New System.Drawing.Size(60, 20)
         Me.txtId.TabIndex = 13
         '
         'Label2
@@ -87,19 +82,17 @@ Partial Class FormRubroDetalle
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(13, 61)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(10, 50)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 17)
+        Me.Label2.Size = New System.Drawing.Size(93, 13)
         Me.Label2.TabIndex = 16
         Me.Label2.Text = "Nombre del Rubro"
         '
         'txtNombreRubro
         '
-        Me.txtNombreRubro.Location = New System.Drawing.Point(145, 58)
-        Me.txtNombreRubro.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNombreRubro.Location = New System.Drawing.Point(109, 47)
         Me.txtNombreRubro.Name = "txtNombreRubro"
-        Me.txtNombreRubro.Size = New System.Drawing.Size(192, 22)
+        Me.txtNombreRubro.Size = New System.Drawing.Size(145, 20)
         Me.txtNombreRubro.TabIndex = 1
         Me.txtNombreRubro.Tag = "*"
         '
@@ -109,17 +102,15 @@ Partial Class FormRubroDetalle
         '
         'FormRubroDetalle
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(364, 174)
+        Me.ClientSize = New System.Drawing.Size(273, 141)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtNombreRubro)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtId)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnAceptar)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormRubroDetalle"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormRubroDetalle"

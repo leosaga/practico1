@@ -33,7 +33,7 @@ Public Class Conexion
     End Sub
     Public Sub New()
 
-        Dim strconexion As String = "server=DESKTOP-IEID114\SQLEXPRESS;database=mercadosantaritaSQL;User Id=sa;Password=leo"
+        Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
         sqlconexion = New SqlConnection(strconexion)
 
     End Sub

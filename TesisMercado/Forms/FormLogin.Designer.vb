@@ -23,7 +23,6 @@ Partial Class FormLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormLogin))
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.TextBox2 = New System.Windows.Forms.TextBox
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
@@ -38,29 +37,26 @@ Partial Class FormLogin
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(20, 112)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Location = New System.Drawing.Point(15, 91)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(235, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(177, 20)
         Me.TextBox1.TabIndex = 0
         Me.TextBox1.Tag = "*"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(68, 185)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox2.Location = New System.Drawing.Point(51, 150)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(132, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 1
         Me.TextBox2.Tag = "*"
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(20, 252)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Location = New System.Drawing.Point(15, 205)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(235, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(177, 21)
         Me.ComboBox1.TabIndex = 2
         Me.ComboBox1.Tag = "*"
         '
@@ -70,10 +66,9 @@ Partial Class FormLogin
         Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(64, 90)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(48, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 20)
+        Me.Label1.Size = New System.Drawing.Size(126, 15)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Nombre y Apellido"
         '
@@ -82,10 +77,9 @@ Partial Class FormLogin
         Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(44, 319)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(33, 259)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(188, 54)
+        Me.Button1.Size = New System.Drawing.Size(141, 44)
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "INGRESAR"
         Me.Button1.UseVisualStyleBackColor = False
@@ -96,10 +90,9 @@ Partial Class FormLogin
         Me.Label2.BackColor = System.Drawing.Color.Black
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(89, 162)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(67, 132)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 20)
+        Me.Label2.Size = New System.Drawing.Size(63, 15)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Pasword"
         '
@@ -109,10 +102,9 @@ Partial Class FormLogin
         Me.Label3.BackColor = System.Drawing.Color.Black
         Me.Label3.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(64, 230)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(48, 187)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(143, 20)
+        Me.Label3.Size = New System.Drawing.Size(107, 15)
         Me.Label3.TabIndex = 6
         Me.Label3.Text = "Tipo de Usuario"
         '
@@ -122,10 +114,9 @@ Partial Class FormLogin
         Me.Label4.BackColor = System.Drawing.Color.Black
         Me.Label4.Font = New System.Drawing.Font("Rockwell Extra Bold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(16, 31)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 25)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(232, 32)
+        Me.Label4.Size = New System.Drawing.Size(183, 25)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "BIENVENIDOS"
         '
@@ -135,10 +126,9 @@ Partial Class FormLogin
         '
         'FormLogin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(273, 400)
+        Me.ClientSize = New System.Drawing.Size(205, 325)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -147,7 +137,6 @@ Partial Class FormLogin
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormLogin"

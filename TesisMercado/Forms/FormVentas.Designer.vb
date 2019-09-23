@@ -51,14 +51,14 @@ Partial Class FormVentas
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.Label1 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.txtCantDeProd = New System.Windows.Forms.TextBox
         Me.Label11 = New System.Windows.Forms.Label
         Me.Label12 = New System.Windows.Forms.Label
         Me.TextBox8 = New System.Windows.Forms.TextBox
         Me.txtTotal = New System.Windows.Forms.TextBox
-        Me.TextBox3 = New System.Windows.Forms.TextBox
         Me.Label13 = New System.Windows.Forms.Label
         Me.Label14 = New System.Windows.Forms.Label
+        Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -372,7 +372,7 @@ Partial Class FormVentas
         Me.DataGridView1.Location = New System.Drawing.Point(4, 279)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(777, 124)
+        Me.DataGridView1.Size = New System.Drawing.Size(777, 127)
         Me.DataGridView1.TabIndex = 40
         '
         'Label1
@@ -380,27 +380,27 @@ Partial Class FormVentas
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(63, 413)
+        Me.Label1.Location = New System.Drawing.Point(31, 419)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 13)
         Me.Label1.TabIndex = 41
         Me.Label1.Text = "Cantidad de Productos"
         '
-        'TextBox1
+        'txtCantDeProd
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(184, 406)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox1.TabIndex = 42
+        Me.txtCantDeProd.Enabled = False
+        Me.txtCantDeProd.Location = New System.Drawing.Point(152, 412)
+        Me.txtCantDeProd.Name = "txtCantDeProd"
+        Me.txtCantDeProd.ReadOnly = True
+        Me.txtCantDeProd.Size = New System.Drawing.Size(47, 20)
+        Me.txtCantDeProd.TabIndex = 42
         '
         'Label11
         '
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(575, 413)
+        Me.Label11.Location = New System.Drawing.Point(578, 419)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(71, 13)
         Me.Label11.TabIndex = 44
@@ -411,7 +411,7 @@ Partial Class FormVentas
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(260, 413)
+        Me.Label12.Location = New System.Drawing.Point(228, 419)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(71, 13)
         Me.Label12.TabIndex = 46
@@ -420,7 +420,7 @@ Partial Class FormVentas
         'TextBox8
         '
         Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(652, 406)
+        Me.TextBox8.Location = New System.Drawing.Point(658, 412)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.ReadOnly = True
         Me.TextBox8.Size = New System.Drawing.Size(47, 20)
@@ -429,27 +429,18 @@ Partial Class FormVentas
         'txtTotal
         '
         Me.txtTotal.Enabled = False
-        Me.txtTotal.Location = New System.Drawing.Point(340, 406)
+        Me.txtTotal.Location = New System.Drawing.Point(308, 412)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.ReadOnly = True
         Me.txtTotal.Size = New System.Drawing.Size(47, 20)
         Me.txtTotal.TabIndex = 48
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(510, 406)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox3.TabIndex = 50
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label13.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label13.Location = New System.Drawing.Point(378, 413)
+        Me.Label13.Location = New System.Drawing.Point(346, 419)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(0, 13)
         Me.Label13.TabIndex = 49
@@ -459,25 +450,34 @@ Partial Class FormVentas
         Me.Label14.AutoSize = True
         Me.Label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label14.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label14.Location = New System.Drawing.Point(405, 413)
+        Me.Label14.Location = New System.Drawing.Point(373, 419)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(100, 13)
+        Me.Label14.Size = New System.Drawing.Size(91, 13)
         Me.Label14.TabIndex = 51
-        Me.Label14.Text = "El Cliente Paga con"
+        Me.Label14.Text = "El Cliente Entrega"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(479, 412)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(75, 20)
+        Me.TextBox1.TabIndex = 52
         '
         'FormVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(785, 534)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.txtTotal)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCantDeProd)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox4)
@@ -530,12 +530,12 @@ Partial Class FormVentas
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents DomainUpDown1 As System.Windows.Forms.DomainUpDown
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtCantDeProd As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents txtTotal As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

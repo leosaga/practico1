@@ -86,4 +86,6 @@ Public Class FormVentas
         txtTotal.Text = Convert.ToString(DataGridView1.Rows(e.RowIndex).Cells(0).Value.ToString())
 
     End Sub
+
+
 End Class

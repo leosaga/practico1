@@ -26,28 +26,26 @@ Partial Class FormVentas
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
         Me.TextBox5 = New System.Windows.Forms.TextBox
         Me.Label5 = New System.Windows.Forms.Label
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker
         Me.ComboBox1 = New System.Windows.Forms.ComboBox
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
+        Me.txtCantidad = New System.Windows.Forms.TextBox
         Me.Button3 = New System.Windows.Forms.Button
         Me.btnBuscar = New System.Windows.Forms.Button
         Me.Label10 = New System.Windows.Forms.Label
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.txtPrecio = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.txtStock = New System.Windows.Forms.TextBox
         Me.Label6 = New System.Windows.Forms.Label
         Me.txtIdProducto = New System.Windows.Forms.TextBox
         Me.Label7 = New System.Windows.Forms.Label
         Me.txtDescripcion = New System.Windows.Forms.TextBox
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox
+        Me.Label17 = New System.Windows.Forms.Label
+        Me.Label16 = New System.Windows.Forms.Label
+        Me.TextBox4 = New System.Windows.Forms.TextBox
         Me.DataGridView1 = New System.Windows.Forms.DataGridView
         Me.Label1 = New System.Windows.Forms.Label
         Me.txtCantDeProd = New System.Windows.Forms.TextBox
@@ -58,15 +56,7 @@ Partial Class FormVentas
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.Label14 = New System.Windows.Forms.Label
         Me.Label11 = New System.Windows.Forms.Label
-        Me.txtCantidad = New System.Windows.Forms.TextBox
-        Me.Label15 = New System.Windows.Forms.Label
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.Label16 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.Label17 = New System.Windows.Forms.Label
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,9 +68,9 @@ Partial Class FormVentas
         Me.btnEliminar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnEliminar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnEliminar.Location = New System.Drawing.Point(180, 496)
+        Me.btnEliminar.Location = New System.Drawing.Point(266, 56)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(118, 34)
+        Me.btnEliminar.Size = New System.Drawing.Size(118, 47)
         Me.btnEliminar.TabIndex = 20
         Me.btnEliminar.Text = "Eliminar Producto"
         Me.btnEliminar.UseVisualStyleBackColor = False
@@ -103,7 +93,7 @@ Partial Class FormVentas
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(348, 22)
+        Me.Label3.Location = New System.Drawing.Point(326, 22)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(83, 13)
         Me.Label3.TabIndex = 31
@@ -114,29 +104,11 @@ Partial Class FormVentas
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(20, 35)
+        Me.Label4.Location = New System.Drawing.Point(145, 23)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(51, 13)
         Me.Label4.TabIndex = 29
         Me.Label4.Text = "Id Cliente"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(229, 19)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 26
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(142, 22)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 13)
-        Me.Label2.TabIndex = 27
-        Me.Label2.Text = "Id Nro.Ticket"
         '
         'TextBox5
         '
@@ -175,12 +147,12 @@ Partial Class FormVentas
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Location = New System.Drawing.Point(4, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(584, 72)
@@ -190,7 +162,7 @@ Partial Class FormVentas
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(438, 19)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(415, 19)
         Me.DateTimePicker2.Name = "DateTimePicker2"
         Me.DateTimePicker2.Size = New System.Drawing.Size(140, 20)
         Me.DateTimePicker2.TabIndex = 33
@@ -198,22 +170,10 @@ Partial Class FormVentas
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(85, 32)
+        Me.ComboBox1.Location = New System.Drawing.Point(216, 20)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(104, 21)
         Me.ComboBox1.TabIndex = 32
-        '
-        'GroupBox3
-        '
-        Me.GroupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox3.Controls.Add(Me.ComboBox1)
-        Me.GroupBox3.Controls.Add(Me.Label4)
-        Me.GroupBox3.Location = New System.Drawing.Point(174, 81)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(211, 79)
-        Me.GroupBox3.TabIndex = 38
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Tipo de Cliente"
         '
         'GroupBox4
         '
@@ -222,20 +182,24 @@ Partial Class FormVentas
         Me.GroupBox4.Controls.Add(Me.Button3)
         Me.GroupBox4.Controls.Add(Me.btnBuscar)
         Me.GroupBox4.Controls.Add(Me.Label10)
-        Me.GroupBox4.Controls.Add(Me.Label9)
-        Me.GroupBox4.Controls.Add(Me.txtPrecio)
-        Me.GroupBox4.Controls.Add(Me.Label8)
-        Me.GroupBox4.Controls.Add(Me.txtStock)
         Me.GroupBox4.Controls.Add(Me.Label6)
         Me.GroupBox4.Controls.Add(Me.txtIdProducto)
         Me.GroupBox4.Controls.Add(Me.Label7)
         Me.GroupBox4.Controls.Add(Me.txtDescripcion)
-        Me.GroupBox4.Location = New System.Drawing.Point(4, 166)
+        Me.GroupBox4.Controls.Add(Me.btnEliminar)
+        Me.GroupBox4.Location = New System.Drawing.Point(4, 81)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(584, 107)
         Me.GroupBox4.TabIndex = 39
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Datos de Productos"
+        '
+        'txtCantidad
+        '
+        Me.txtCantidad.Location = New System.Drawing.Point(387, 19)
+        Me.txtCantidad.Name = "txtCantidad"
+        Me.txtCantidad.Size = New System.Drawing.Size(61, 20)
+        Me.txtCantidad.TabIndex = 42
         '
         'Button3
         '
@@ -243,7 +207,7 @@ Partial Class FormVentas
         Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Button3.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button3.Location = New System.Drawing.Point(443, 58)
+        Me.Button3.Location = New System.Drawing.Point(113, 58)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(123, 43)
         Me.Button3.TabIndex = 41
@@ -256,7 +220,7 @@ Partial Class FormVentas
         Me.btnBuscar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.btnBuscar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.btnBuscar.Location = New System.Drawing.Point(361, 15)
+        Me.btnBuscar.Location = New System.Drawing.Point(469, 16)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(109, 24)
         Me.btnBuscar.TabIndex = 40
@@ -268,51 +232,11 @@ Partial Class FormVentas
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(315, 76)
+        Me.Label10.Location = New System.Drawing.Point(335, 22)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(49, 13)
         Me.Label10.TabIndex = 38
         Me.Label10.Text = "Cantidad"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label9.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label9.Location = New System.Drawing.Point(144, 75)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 13)
-        Me.Label9.TabIndex = 36
-        Me.Label9.Text = "Precio de Venta"
-        '
-        'txtPrecio
-        '
-        Me.txtPrecio.Enabled = False
-        Me.txtPrecio.Location = New System.Drawing.Point(249, 72)
-        Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.ReadOnly = True
-        Me.txtPrecio.Size = New System.Drawing.Size(47, 20)
-        Me.txtPrecio.TabIndex = 37
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label8.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label8.Location = New System.Drawing.Point(10, 76)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
-        Me.Label8.TabIndex = 34
-        Me.Label8.Text = "Stock"
-        '
-        'txtStock
-        '
-        Me.txtStock.Enabled = False
-        Me.txtStock.Location = New System.Drawing.Point(79, 73)
-        Me.txtStock.Name = "txtStock"
-        Me.txtStock.ReadOnly = True
-        Me.txtStock.Size = New System.Drawing.Size(47, 20)
-        Me.txtStock.TabIndex = 35
         '
         'Label6
         '
@@ -359,8 +283,6 @@ Partial Class FormVentas
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label16)
         Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.Label15)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
         Me.GroupBox2.Location = New System.Drawing.Point(594, 3)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(198, 157)
@@ -368,16 +290,55 @@ Partial Class FormVentas
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos de la Factura"
         '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Location = New System.Drawing.Point(107, 87)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(86, 21)
+        Me.ComboBox2.TabIndex = 31
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label17.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label17.Location = New System.Drawing.Point(-3, 95)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(109, 13)
+        Me.Label17.TabIndex = 30
+        Me.Label17.Text = "Tipo de Comprobante"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label16.Location = New System.Drawing.Point(23, 59)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(80, 13)
+        Me.Label16.TabIndex = 28
+        Me.Label16.Text = "id comprobante"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Enabled = False
+        Me.TextBox4.Location = New System.Drawing.Point(107, 56)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.ReadOnly = True
+        Me.TextBox4.Size = New System.Drawing.Size(47, 20)
+        Me.TextBox4.TabIndex = 29
+        '
         'DataGridView1
         '
         Me.DataGridView1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(4, 279)
+        Me.DataGridView1.Location = New System.Drawing.Point(4, 194)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(788, 127)
+        Me.DataGridView1.Size = New System.Drawing.Size(788, 212)
         Me.DataGridView1.TabIndex = 40
         '
         'Label1
@@ -466,72 +427,6 @@ Partial Class FormVentas
         Me.Label11.TabIndex = 54
         Me.Label11.Text = "Vuelto a Dar"
         '
-        'txtCantidad
-        '
-        Me.txtCantidad.Location = New System.Drawing.Point(370, 73)
-        Me.txtCantidad.Name = "txtCantidad"
-        Me.txtCantidad.Size = New System.Drawing.Size(61, 20)
-        Me.txtCantidad.TabIndex = 42
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label15.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label15.Location = New System.Drawing.Point(23, 26)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(55, 13)
-        Me.Label15.TabIndex = 26
-        Me.Label15.Text = "Id Factura"
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(92, 23)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox3.TabIndex = 27
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label16.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label16.Location = New System.Drawing.Point(23, 59)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(78, 13)
-        Me.Label16.TabIndex = 28
-        Me.Label16.Text = "Nro de Factura"
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(107, 56)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox4.TabIndex = 29
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label17.Location = New System.Drawing.Point(23, 95)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(82, 13)
-        Me.Label17.TabIndex = 30
-        Me.Label17.Text = "Tipo de Factura"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(107, 87)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(86, 21)
-        Me.ComboBox2.TabIndex = 31
-        '
         'FormVentas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -548,19 +443,15 @@ Partial Class FormVentas
         Me.Controls.Add(Me.txtCantDeProd)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btnAceptar)
-        Me.Controls.Add(Me.btnEliminar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Name = "FormVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VentasForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -574,22 +465,15 @@ Partial Class FormVentas
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents txtPrecio As System.Windows.Forms.TextBox
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents txtStock As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents txtIdProducto As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
@@ -611,6 +495,4 @@ Partial Class FormVentas
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
 End Class

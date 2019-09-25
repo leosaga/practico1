@@ -55,8 +55,8 @@ Public Class FormVentas
 
         txtIdProducto.Text = FormLstProductos.producto.Id
         txtDescripcion.Text = FormLstProductos.producto.nombre
-        txtStock.Text = FormLstProductos.producto.cantidad
-        txtPrecio.Text = FormLstProductos.producto.Precio
+        'txtStock.Text = FormLstProductos.producto.cantidad
+        ' txtPrecio.Text = FormLstProductos.producto.Precio
 
 
     End Sub

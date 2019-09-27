@@ -31,11 +31,36 @@ Public Class Conexion
         sqlconexion.Close()
 
     End Sub
-    Public Sub New()
 
-        Dim strconexion As String = "server=DESKTOP-IEID114\SQLEXPRESS;database=mercadosantaritaSQL;User Id=sa;Password=leo"
-        sqlconexion = New SqlConnection(strconexion)
+    'conexion Leandro
+    'Public Sub New()
 
-    End Sub
+    '    Dim strconexion As String = "server=DESKTOP-IEID114\SQLEXPRESS;database=mercadosantaritaSQL;User Id=sa;Password=leo"
+    '    sqlconexion = New SqlConnection(strconexion)
+
+    'End Sub
+
+
+
+    ''conexion Julian
+    'Public Sub New()
+
+    '    Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
+    '    sqlconexion = New SqlConnection(strconexion)
+
+    'End Sub
+
+
+
+    'conexion Juan
+    'Public Sub New()
+
+    '    Dim strconexion As String = "server=JUAN-PC;Database=mercadosantaritaSQL;Trusted_Connection=True;"
+    '    sqlconexion = New SqlConnection(strconexion)
+
+    'End Sub
+
+
+
 
 End Class

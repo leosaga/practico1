@@ -42,13 +42,13 @@ Public Class Conexion
 
 
 
-    ''conexion Julian
-    'Public Sub New()
+    'conexion Julian
+    Public Sub New()
 
-    '    Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
-    '    sqlconexion = New SqlConnection(strconexion)
+        Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
+        sqlconexion = New SqlConnection(strconexion)
 
-    'End Sub
+    End Sub
 
 
 

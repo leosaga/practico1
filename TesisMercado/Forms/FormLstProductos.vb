@@ -48,8 +48,8 @@ Public Class FormLstProductos
         tabla.DataSource = sqlDataTable
 
 
-        tabla.Columns("nombre").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-        tabla.Columns("precio_venta").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        'tabla.Columns("nombre").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+        'tabla.Columns("precio_venta").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
 
         conex.cerrar()
 
@@ -62,5 +62,11 @@ Public Class FormLstProductos
         producto.cantidad = DataGridView1.Item("cantidad", DataGridView1.CurrentRow.Index).Value
         producto.Precio = DataGridView1.Item("Precio", DataGridView1.CurrentRow.Index).Value
         Close()
+    End Sub
+
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
+
+        Close()
+
     End Sub
 End Class

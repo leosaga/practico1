@@ -23,42 +23,43 @@ Partial Class FormLogin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox
+        Me.txtUsuario = New System.Windows.Forms.TextBox
+        Me.txtPassword = New System.Windows.Forms.TextBox
+        Me.ComboUsuario = New System.Windows.Forms.ComboBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Button1 = New System.Windows.Forms.Button
+        Me.btnIngresar = New System.Windows.Forms.Button
         Me.Label2 = New System.Windows.Forms.Label
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.btnCancelar = New System.Windows.Forms.Button
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txtUsuario
         '
-        Me.TextBox1.Location = New System.Drawing.Point(15, 91)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(177, 20)
-        Me.TextBox1.TabIndex = 0
-        Me.TextBox1.Tag = "*"
+        Me.txtUsuario.Location = New System.Drawing.Point(122, 106)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(105, 20)
+        Me.txtUsuario.TabIndex = 0
+        Me.txtUsuario.Tag = "*"
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Location = New System.Drawing.Point(51, 150)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.Tag = "*"
+        Me.txtPassword.Location = New System.Drawing.Point(122, 148)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.Tag = "*"
         '
-        'ComboBox1
+        'ComboUsuario
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(15, 205)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(177, 21)
-        Me.ComboBox1.TabIndex = 2
-        Me.ComboBox1.Tag = "*"
+        Me.ComboUsuario.FormattingEnabled = True
+        Me.ComboUsuario.Location = New System.Drawing.Point(122, 185)
+        Me.ComboUsuario.Name = "ComboUsuario"
+        Me.ComboUsuario.Size = New System.Drawing.Size(107, 21)
+        Me.ComboUsuario.TabIndex = 2
+        Me.ComboUsuario.Tag = "*"
         '
         'Label1
         '
@@ -66,23 +67,23 @@ Partial Class FormLogin
         Me.Label1.BackColor = System.Drawing.Color.Black
         Me.Label1.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(48, 73)
+        Me.Label1.Location = New System.Drawing.Point(59, 108)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(126, 15)
+        Me.Label1.Size = New System.Drawing.Size(57, 15)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Nombre y Apellido"
+        Me.Label1.Text = "Usuario"
         '
-        'Button1
+        'btnIngresar
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Font = New System.Drawing.Font("Modern No. 20", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button1.Location = New System.Drawing.Point(33, 259)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(141, 44)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "INGRESAR"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnIngresar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnIngresar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnIngresar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnIngresar.Location = New System.Drawing.Point(34, 243)
+        Me.btnIngresar.Name = "btnIngresar"
+        Me.btnIngresar.Size = New System.Drawing.Size(175, 44)
+        Me.btnIngresar.TabIndex = 4
+        Me.btnIngresar.Text = "INGRESAR"
+        Me.btnIngresar.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -90,11 +91,11 @@ Partial Class FormLogin
         Me.Label2.BackColor = System.Drawing.Color.Black
         Me.Label2.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(67, 132)
+        Me.Label2.Location = New System.Drawing.Point(48, 150)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(63, 15)
+        Me.Label2.Size = New System.Drawing.Size(70, 15)
         Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Pasword"
+        Me.Label2.Text = "Password"
         '
         'Label3
         '
@@ -102,7 +103,7 @@ Partial Class FormLogin
         Me.Label3.BackColor = System.Drawing.Color.Black
         Me.Label3.Font = New System.Drawing.Font("Rockwell", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(48, 187)
+        Me.Label3.Location = New System.Drawing.Point(14, 187)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 15)
         Me.Label3.TabIndex = 6
@@ -114,7 +115,7 @@ Partial Class FormLogin
         Me.Label4.BackColor = System.Drawing.Color.Black
         Me.Label4.Font = New System.Drawing.Font("Rockwell Extra Bold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(12, 25)
+        Me.Label4.Location = New System.Drawing.Point(26, 43)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(183, 25)
         Me.Label4.TabIndex = 7
@@ -124,19 +125,32 @@ Partial Class FormLogin
         '
         Me.ErrorProvider1.ContainerControl = Me
         '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnCancelar.Font = New System.Drawing.Font("Modern No. 20", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCancelar.Location = New System.Drawing.Point(62, 304)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(111, 33)
+        Me.btnCancelar.TabIndex = 8
+        Me.btnCancelar.Text = "Salir"
+        Me.btnCancelar.UseVisualStyleBackColor = False
+        '
         'FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(205, 325)
+        Me.ClientSize = New System.Drawing.Size(243, 365)
+        Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnIngresar)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ComboUsuario)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsuario)
         Me.Name = "FormLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormLogin"
@@ -145,13 +159,14 @@ Partial Class FormLogin
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents txtUsuario As System.Windows.Forms.TextBox
+    Friend WithEvents txtPassword As System.Windows.Forms.TextBox
+    Friend WithEvents ComboUsuario As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnIngresar As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents ErrorProvider1 As System.Windows.Forms.ErrorProvider
+    Friend WithEvents btnCancelar As System.Windows.Forms.Button
 End Class

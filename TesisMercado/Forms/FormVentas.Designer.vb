@@ -30,10 +30,10 @@ Partial Class FormVentas
         Me.Label5 = New System.Windows.Forms.Label
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox
+        Me.ComboCliente = New System.Windows.Forms.ComboBox
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker
         Me.GroupBox2 = New System.Windows.Forms.GroupBox
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox
+        Me.ComboComprobante = New System.Windows.Forms.ComboBox
         Me.Label17 = New System.Windows.Forms.Label
         Me.Label16 = New System.Windows.Forms.Label
         Me.txtIdComprobante = New System.Windows.Forms.TextBox
@@ -147,7 +147,7 @@ Partial Class FormVentas
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.ComboCliente)
         Me.GroupBox1.Controls.Add(Me.DateTimePicker2)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label5)
@@ -161,13 +161,13 @@ Partial Class FormVentas
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de la Venta"
         '
-        'ComboBox1
+        'ComboCliente
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(275, 19)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(104, 21)
-        Me.ComboBox1.TabIndex = 32
+        Me.ComboCliente.FormattingEnabled = True
+        Me.ComboCliente.Location = New System.Drawing.Point(275, 19)
+        Me.ComboCliente.Name = "ComboCliente"
+        Me.ComboCliente.Size = New System.Drawing.Size(104, 21)
+        Me.ComboCliente.TabIndex = 32
         '
         'DateTimePicker2
         '
@@ -179,7 +179,7 @@ Partial Class FormVentas
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.ComboComprobante)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label16)
         Me.GroupBox2.Controls.Add(Me.txtIdComprobante)
@@ -190,13 +190,13 @@ Partial Class FormVentas
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Datos de la Factura"
         '
-        'ComboBox2
+        'ComboComprobante
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(167, 64)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(127, 21)
-        Me.ComboBox2.TabIndex = 31
+        Me.ComboComprobante.FormattingEnabled = True
+        Me.ComboComprobante.Location = New System.Drawing.Point(167, 64)
+        Me.ComboComprobante.Name = "ComboComprobante"
+        Me.ComboComprobante.Size = New System.Drawing.Size(127, 21)
+        Me.ComboComprobante.TabIndex = 31
         '
         'Label17
         '
@@ -473,7 +473,7 @@ Partial Class FormVentas
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents DateTimePicker2 As System.Windows.Forms.DateTimePicker
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboCliente As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
     Friend WithEvents btnBuscar As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
@@ -492,7 +492,7 @@ Partial Class FormVentas
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents txtCantidad As System.Windows.Forms.TextBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboComprobante As System.Windows.Forms.ComboBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents txtIdComprobante As System.Windows.Forms.TextBox

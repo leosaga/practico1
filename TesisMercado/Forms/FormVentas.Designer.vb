@@ -26,7 +26,7 @@ Partial Class FormVentas
         Me.btnCancelar = New System.Windows.Forms.Button
         Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
-        Me.TextBox5 = New System.Windows.Forms.TextBox
+        Me.txtIdVenta = New System.Windows.Forms.TextBox
         Me.Label5 = New System.Windows.Forms.Label
         Me.btnAceptar = New System.Windows.Forms.Button
         Me.GroupBox1 = New System.Windows.Forms.GroupBox
@@ -36,7 +36,7 @@ Partial Class FormVentas
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.Label17 = New System.Windows.Forms.Label
         Me.Label16 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
+        Me.txtIdComprobante = New System.Windows.Forms.TextBox
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
         Me.txtCantidad = New System.Windows.Forms.TextBox
         Me.Button3 = New System.Windows.Forms.Button
@@ -110,14 +110,14 @@ Partial Class FormVentas
         Me.Label4.TabIndex = 29
         Me.Label4.Text = "Id Cliente"
         '
-        'TextBox5
+        'txtIdVenta
         '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(138, 21)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.ReadOnly = True
-        Me.TextBox5.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox5.TabIndex = 25
+        Me.txtIdVenta.Enabled = False
+        Me.txtIdVenta.Location = New System.Drawing.Point(138, 21)
+        Me.txtIdVenta.Name = "txtIdVenta"
+        Me.txtIdVenta.ReadOnly = True
+        Me.txtIdVenta.Size = New System.Drawing.Size(47, 20)
+        Me.txtIdVenta.TabIndex = 25
         '
         'Label5
         '
@@ -152,7 +152,7 @@ Partial Class FormVentas
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.txtIdVenta)
         Me.GroupBox1.Controls.Add(Me.GroupBox2)
         Me.GroupBox1.Location = New System.Drawing.Point(4, 3)
         Me.GroupBox1.Name = "GroupBox1"
@@ -182,7 +182,7 @@ Partial Class FormVentas
         Me.GroupBox2.Controls.Add(Me.ComboBox2)
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.Label16)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.Controls.Add(Me.txtIdComprobante)
         Me.GroupBox2.Location = New System.Drawing.Point(463, 9)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(325, 107)
@@ -220,14 +220,14 @@ Partial Class FormVentas
         Me.Label16.TabIndex = 28
         Me.Label16.Text = "id comprobante"
         '
-        'TextBox4
+        'txtIdComprobante
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(167, 28)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(47, 20)
-        Me.TextBox4.TabIndex = 29
+        Me.txtIdComprobante.Enabled = False
+        Me.txtIdComprobante.Location = New System.Drawing.Point(167, 28)
+        Me.txtIdComprobante.Name = "txtIdComprobante"
+        Me.txtIdComprobante.ReadOnly = True
+        Me.txtIdComprobante.Size = New System.Drawing.Size(47, 20)
+        Me.txtIdComprobante.TabIndex = 29
         '
         'GroupBox4
         '
@@ -453,7 +453,6 @@ Partial Class FormVentas
         Me.Controls.Add(Me.btnCancelar)
         Me.Name = "FormVentas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "VentasForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -469,7 +468,7 @@ Partial Class FormVentas
     Friend WithEvents btnCancelar As System.Windows.Forms.Button
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtIdVenta As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents btnAceptar As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
@@ -496,7 +495,7 @@ Partial Class FormVentas
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtIdComprobante As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

@@ -3,10 +3,39 @@ Imports System.Data.SqlClient
 Public Class LstProductos
 
     Dim producto As New Productos
+    Dim conex As New Conexion
 
     Private Sub LstProductos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         producto.ConsultarProducto(dgvProductos)
+
+        LlenarTabla(dgvProductos)
+
+    End Sub
+
+    Private Sub LlenarTabla(ByVal tabla As DataGridView)
+
+
+        Dim strComando As String = "productosLlenarTabla"
+
+
+        Dim sqlComando As New SqlCommand("productosLlenarTabla", conex.sqlconexion)
+
+
+        sqlComando.CommandType = CommandType.StoredProcedure
+        conex.abrir()
+
+        Dim sqlAdapter As New SqlDataAdapter(sqlComando)
+        Dim sqlDataTable As New DataTable
+
+        sqlAdapter.Fill(sqlDataTable)
+        tabla.DataSource = sqlDataTable
+
+
+
+        tabla.Columns("precio_venta").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+
+        conex.cerrar()
 
     End Sub
 

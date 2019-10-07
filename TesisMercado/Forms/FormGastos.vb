@@ -3,9 +3,9 @@ Imports System.Data.SqlClient
 Public Class FormGastos
     Dim conex As New Conexion
 
-    Private Sub FormServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        LlenarTabla(DataGridView1)
-    End Sub
+    'Private Sub FormServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+    '    LlenarTabla(DataGridView1)
+    'End Sub
     Dim gasto As New Gastos
 
     Private Sub LlenarTabla(ByVal tabla As DataGridView)
@@ -48,5 +48,9 @@ Public Class FormGastos
     Private Sub BtnCerrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnCerrar.Click
         Close()
 
+    End Sub
+
+    Private Sub FormGastos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        LlenarTabla(DataGridView1)
     End Sub
 End Class

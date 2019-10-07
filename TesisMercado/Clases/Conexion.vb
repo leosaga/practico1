@@ -33,22 +33,22 @@ Public Class Conexion
     End Sub
 
     'conexion Leandro
-    'Public Sub New()
+    Public Sub New()
 
-    '    Dim strconexion As String = "server=DESKTOP-IEID114\SQLEXPRESS;database=mercadosantaritaSQL;User Id=sa;Password=leo"
-    '    sqlconexion = New SqlConnection(strconexion)
+        Dim strconexion As String = "server=DESKTOP-IEID114\SQLEXPRESS;database=mercadosantaritaSQL;User Id=sa;Password=leo"
+        sqlconexion = New SqlConnection(strconexion)
 
-    'End Sub
+    End Sub
 
 
 
     'conexion Julian
-    Public Sub New()
+    'Public Sub New()
 
-        Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
-        sqlconexion = New SqlConnection(strconexion)
+    '    Dim strconexion As String = "Server=DESKTOP-O022KNB;Database=mercadosantaritaSQL;Trusted_Connection=True;"
+    '    sqlconexion = New SqlConnection(strconexion)
 
-    End Sub
+    'End Sub
 
 
 

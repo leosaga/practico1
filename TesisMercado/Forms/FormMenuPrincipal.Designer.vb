@@ -104,7 +104,7 @@ Partial Class FormMenuPrincipal
         Me.ServiciosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.ServiciosToolStripMenuItem.Name = "ServiciosToolStripMenuItem"
         Me.ServiciosToolStripMenuItem.Size = New System.Drawing.Size(99, 130)
-        Me.ServiciosToolStripMenuItem.Text = "Servicios"
+        Me.ServiciosToolStripMenuItem.Text = "Gastos"
         '
         'UsuariosToolStripMenuItem
         '

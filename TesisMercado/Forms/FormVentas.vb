@@ -4,29 +4,47 @@ Imports System.Data.SqlClient
 Public Class FormVentas
 
     Dim Venta As New ventaClass
+    Private comprobante As New FacturacionClass
+    Private pro As New productosClass
     Dim conex As New Conexion
-
-    'Private Sub LlenarTabla(ByVal tabla As DataGridView)
-
-
-    '    Dim strComando As String = "ventaLlenarTabla"
+    Private vent_ As ventaClass
+    Private esNuevo_ As Boolean
 
 
-    '    Dim sqlComando As New SqlCommand("ventaLlenarTabla", conex.sqlconexion)
+    Private Property vent() As ventaClass
+        Get
+            Return vent_
+
+        End Get
+        Set(ByVal value As ventaClass)
+            vent_ = value
+        End Set
+    End Property
+
+    Public Property esNuevo() As Boolean
+        Get
+            Return esNuevo_
+        End Get
+        Set(ByVal value As Boolean)
+            esNuevo_ = value
+        End Set
+    End Property
 
 
-    '    sqlComando.CommandType = CommandType.StoredProcedure
-    '    conex.abrir()
+    'constructor para agregar
 
-    '    Dim sqlAdapter As New SqlDataAdapter(sqlComando)
-    '    Dim sqlDataTable As New DataTable
+    'Public Sub New()
+    '    InitializeComponent()
 
-    '    sqlAdapter.Fill(sqlDataTable)
-    '    tabla.DataSource = sqlDataTable
+    '    Dim ventaPro As New productosClass
 
-    '    tabla.Columns("fecha").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+    '    ventaPro.Id = ""
+    '    ventaPro.nombre = ""
+    '    ventaPro.cantidad = ""
 
-    '    conex.cerrar()
+
+    '    vent_ = vent
+    '    esNuevo = True
 
     'End Sub
 
@@ -40,10 +58,14 @@ Public Class FormVentas
 
     Private Sub FormVentas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
-        'LlenarTabla(DataGridView1)
 
         txtIdVenta.Text = Venta.Id
-        'txtComprobante.Text = Venta.comprobante
+        txtIdComprobante.Text = comprobante.id
+
+
+        txtDescripcion.Text = pro.nombre
+        txtIdProducto.Text = pro.Id
+        txtCantidad.Text = pro.cantidad
 
 
 
@@ -60,31 +82,10 @@ Public Class FormVentas
 
         txtIdProducto.Text = FormLstProductos.producto.Id
         txtDescripcion.Text = FormLstProductos.producto.nombre
-        'txtStock.Text = FormLstProductos.producto.cantidad
-        ' txtPrecio.Text = FormLstProductos.producto.Precio
 
 
     End Sub
-    'Private Sub Txtidventa_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Txtidventa.TextChanged
-
-    '    Dim FormVenta As New FormVentas
-
-
-    '    FormVenta.ShowDialog()
-
-    '    Txtidventa.Text = FormVenta.Venta.Id
-
-
-    'End Sub
-
-
-    'Private Sub txtnroticket_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles txtnroticket.TextChanged
-    '    Dim FormVenta As New FormVentas
-
-
-    '    FormVenta.ShowDialog()
-    '    txtnroticket.Text = FormVenta.Venta.nro_ticket
-    'End Sub
+  
 
     Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
@@ -96,7 +97,24 @@ Public Class FormVentas
     End Sub
 
 
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+    Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
+
+
+
+        'Dim pro As New productosClass
+
+
+        'pro.Id = txtIdProducto.Text
+        'pro.nombre = txtDescripcion.Text
+        'pro.cantidad = txtCantidad.Text
+
+        'If esNuevo Then
+
+        '    pro.Agregar(pro)
+
+        '    Close()
+
+        'End If
 
     End Sub
 End Class

@@ -57,4 +57,7 @@ Public Class ventaClass
         End Set
     End Property
 
+
+
+
 End Class

@@ -39,7 +39,7 @@ Partial Class FormVentas
         Me.txtIdComprobante = New System.Windows.Forms.TextBox
         Me.GroupBox4 = New System.Windows.Forms.GroupBox
         Me.txtCantidad = New System.Windows.Forms.TextBox
-        Me.Button3 = New System.Windows.Forms.Button
+        Me.btnAgregar = New System.Windows.Forms.Button
         Me.btnBuscar = New System.Windows.Forms.Button
         Me.Label10 = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
@@ -233,7 +233,7 @@ Partial Class FormVentas
         '
         Me.GroupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.GroupBox4.Controls.Add(Me.txtCantidad)
-        Me.GroupBox4.Controls.Add(Me.Button3)
+        Me.GroupBox4.Controls.Add(Me.btnAgregar)
         Me.GroupBox4.Controls.Add(Me.btnBuscar)
         Me.GroupBox4.Controls.Add(Me.Label10)
         Me.GroupBox4.Controls.Add(Me.Label6)
@@ -254,18 +254,18 @@ Partial Class FormVentas
         Me.txtCantidad.Size = New System.Drawing.Size(61, 20)
         Me.txtCantidad.TabIndex = 42
         '
-        'Button3
+        'btnAgregar
         '
-        Me.Button3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button3.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Button3.Location = New System.Drawing.Point(588, 49)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(192, 43)
-        Me.Button3.TabIndex = 41
-        Me.Button3.Text = "Agregar a la Lista"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnAgregar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnAgregar.Font = New System.Drawing.Font("Modern No. 20", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAgregar.Location = New System.Drawing.Point(588, 49)
+        Me.btnAgregar.Name = "btnAgregar"
+        Me.btnAgregar.Size = New System.Drawing.Size(192, 43)
+        Me.btnAgregar.TabIndex = 41
+        Me.btnAgregar.Text = "Agregar a la Lista"
+        Me.btnAgregar.UseVisualStyleBackColor = False
         '
         'btnBuscar
         '
@@ -482,7 +482,7 @@ Partial Class FormVentas
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents txtDescripcion As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnAgregar As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtCantDeProd As System.Windows.Forms.TextBox

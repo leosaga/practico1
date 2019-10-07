@@ -7,7 +7,7 @@ Public Class FormVentasDetalle
     Dim conex As New Conexion
 
     Private Sub btnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAceptar.Click
-        FormVentas.Show()
+        FormVentas.ShowDialog()
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click

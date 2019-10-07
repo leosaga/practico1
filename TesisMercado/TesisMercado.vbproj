@@ -71,6 +71,9 @@
     <Compile Include="Clases\detalle_ventaClass.vb" />
     <Compile Include="Clases\FacturacionClass.vb" />
     <Compile Include="Clases\Funciones.vb" />
+    <Compile Include="Clases\ProductoPorProveedor.vb" />
+    <Compile Include="Clases\Productos.vb" />
+    <Compile Include="Clases\Proveedores.vb" />
     <Compile Include="Clases\ProveedoresClass.vb" />
     <Compile Include="Clases\RubroClass.vb" />
     <Compile Include="Clases\UsuariosClass.vb" />
@@ -184,6 +187,24 @@
     <Compile Include="Forms\FormVentasDetalle.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\LstProductos.Designer.vb">
+      <DependentUpon>LstProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LstProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LstProveedores.Designer.vb">
+      <DependentUpon>LstProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LstProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProduProveForm.Designer.vb">
+      <DependentUpon>ProduProveForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProduProveForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -256,6 +277,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormVentasDetalle.resx">
       <DependentUpon>FormVentasDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LstProductos.resx">
+      <DependentUpon>LstProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LstProveedores.resx">
+      <DependentUpon>LstProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProduProveForm.resx">
+      <DependentUpon>ProduProveForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

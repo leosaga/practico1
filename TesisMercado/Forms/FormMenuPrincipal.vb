@@ -21,7 +21,7 @@
     End Sub
 
     Private Sub StockDeProductosToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StockDeProductosToolStripMenuItem.Click
-        FormProductos.Show()
+        LstProductos.Show()
     End Sub
 
     Private Sub VentasToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VentasToolStripMenuItem.Click

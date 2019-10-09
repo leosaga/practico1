@@ -72,8 +72,6 @@
     <Compile Include="Clases\FacturacionClass.vb" />
     <Compile Include="Clases\Funciones.vb" />
     <Compile Include="Clases\ProductoPorProveedor.vb" />
-    <Compile Include="Clases\Productos.vb" />
-    <Compile Include="Clases\Proveedores.vb" />
     <Compile Include="Clases\ProveedoresClass.vb" />
     <Compile Include="Clases\RubroClass.vb" />
     <Compile Include="Clases\UsuariosClass.vb" />

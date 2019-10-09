@@ -52,23 +52,28 @@ Public Class ClientesClass
 
 
     Public Sub Agregar(ByVal clientes As ClientesClass)
+        Try
+            Abrir()
 
-        Dim conex As New Conexion
+            Dim objComando As New SqlCommand("ClientesAgregar", objConexion)
+            objComando.CommandType = CommandType.StoredProcedure
 
-        Dim sqlComando As New SqlCommand("ClientesAgregar", conex.sqlconexion)
+            'sqlComando.Parameters.AddWithValue("@Id", clientes.Id)
+            objComando.Parameters.AddWithValue("@nombre", clientes.nombre)
+            objComando.Parameters.AddWithValue("@apellido", clientes.apellido)
+            objComando.Parameters.AddWithValue("@direccion", clientes.direccion)
+            objComando.Parameters.AddWithValue("@telefono", clientes.telefono)
 
-        conex.abrir()
+            If objComando.ExecuteNonQuery Then
 
-        sqlComando.CommandType = CommandType.StoredProcedure
+            End If
 
-        'sqlComando.Parameters.AddWithValue("@Id", clientes.Id)
-        sqlComando.Parameters.AddWithValue("@nombre", clientes.nombre)
-        sqlComando.Parameters.AddWithValue("@apellido", clientes.apellido)
-        sqlComando.Parameters.AddWithValue("@direccion", clientes.direccion)
-        sqlComando.Parameters.AddWithValue("@telefono", clientes.telefono)
 
-        sqlComando.ExecuteNonQuery()
-        conex.cerrar()
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            Cerrar()
+        End Try
 
     End Sub
 

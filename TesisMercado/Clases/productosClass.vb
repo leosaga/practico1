@@ -4,8 +4,6 @@ Public Class productosClass
     Dim Id_, id_Rubro_, codigo_, cantidad_, Ganancia_, Precio_, precio_venta_ As Integer
     Dim nombre_, unidad_ As String
 
-
-
     Public Property Id() As Integer
         Get
             Return Id_
@@ -87,7 +85,15 @@ Public Class productosClass
         End Set
     End Property
 
-    Public Sub Agregar(ByVal Producto As productosClass)
+    Public Sub ConsultarProducto(ByVal listado As DataGridView)
+        Dim conex As New Conexion
+        Dim objComando As New SqlCommand("ConsultarProducto", conex.sqlconexion)
+        objComando.CommandType = CommandType.StoredProcedure
+
+    End Sub
+
+
+    Public Function Agregar(ByVal Producto As productosClass)
 
         Dim conex As New Conexion
 
@@ -108,14 +114,10 @@ Public Class productosClass
         sqlComando.Parameters.AddWithValue("@precio_venta", Producto.precio_venta)
 
 
-        sqlComando.ExecuteNonQuery()
-
-
-
-
+        Return sqlComando.ExecuteNonQuery()
         conex.cerrar()
 
-    End Sub
+    End Function
 
     Public Sub Modificar(ByVal Producto As productosClass)
 
@@ -145,14 +147,14 @@ Public Class productosClass
     End Sub
 
 
-    Public Sub Eliminar(ByVal au_id As String)
+    Public Sub Eliminar(ByVal idProducto As Integer)
 
         Dim conex As New Conexion
         conex.abrir()
 
         Dim sqlComando As New SqlCommand("productosEliminar", conex.sqlconexion)
         sqlComando.CommandType = CommandType.StoredProcedure
-        sqlComando.Parameters.AddWithValue("@Id", Id)
+        sqlComando.Parameters.AddWithValue("@Id", idProducto)
         Try
             sqlComando.ExecuteNonQuery()
         Catch ex As Exception

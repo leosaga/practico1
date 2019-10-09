@@ -1,15 +1,16 @@
-﻿Public Class ProduProveForm
+﻿
+Public Class ProduProveForm
 
     Dim ProduProve As New ProductoPorProveedor
-    Private producto_ As New Productos
+    Private producto_ As New productosClass
     Private esNuevo_ As Boolean
     Dim func As New Funciones
 
-    Public Property producto() As Productos
+    Public Property producto() As productosClass
         Get
             Return producto_
         End Get
-        Set(ByVal value As Productos)
+        Set(ByVal value As productosClass)
             producto_ = value
         End Set
     End Property
@@ -23,7 +24,7 @@
         End Set
     End Property
 
-    Public Sub New(ByVal pro As Productos)
+    Public Sub New(ByVal pro As productosClass)
 
         InitializeComponent()
         producto = pro
@@ -34,7 +35,7 @@
     Public Sub New()
 
         InitializeComponent()
-        producto.id = 0
+        producto.Id = 0
         producto.nombre = ""
         producto.codigo = 0
         producto.unidad = ""
@@ -48,12 +49,11 @@
     Private Sub btnAgregar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAgregar.Click
 
 
-        Dim proveedoresSeleccionados As New List(Of Proveedores)
+        Dim proveedoresSeleccionados As New List(Of ProveedoresClass)
         Dim LstProveedores As New LstProveedores(proveedoresSeleccionados)
-        lstProveedores.ShowDialog()
+        LstProveedores.ShowDialog()
 
-        'aluMateria.listaAlumnosMaterias(materia.id, alumnosSeleccionados, dgvAlumnosMateria)
-        'ProduProve.listaProductosProveedores(producto.id, proveedoresSeleccionados, dgvProduProve)
+        ProduProve.listaProductosProveedores(producto.Id, proveedoresSeleccionados, dgvProduProve)
     End Sub
 
     Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
@@ -71,7 +71,7 @@
             producto.Precio = txtPrecio.Text
 
             If esNuevo Then
-                producto.id = producto.Agregar(producto)
+                producto.Id = producto.Agregar(producto)
 
             Else
 
@@ -81,7 +81,7 @@
 
             End If
 
-            ProduProve.ActualizarTablas(dgvProduProve, producto.id)
+            ProduProve.ActualizarTablas(dgvProduProve, producto.Id)
 
             Me.Close()
 
@@ -107,9 +107,9 @@
         txtUnidad.Text = producto.unidad
         txtCantidad.Text = producto.cantidad
         txtPrecio.Text = producto.Precio
-        txtid.Text = producto.id
+        txtid.Text = producto.Id
 
-        ProduProve.Consultar(producto.id, dgvProduProve)
+        ProduProve.Consultar(producto.Id, dgvProduProve)
     End Sub
 
     Private Sub txtNombre_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles txtNombre.KeyPress

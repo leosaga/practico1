@@ -2,7 +2,7 @@
 Imports System.Data.SqlClient
 Public Class LstProductos
 
-    Dim producto As New Productos
+    Dim producto As New productosClass
     Dim conex As New Conexion
 
     Private Sub LstProductos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -52,7 +52,7 @@ Public Class LstProductos
         producto.id = dgvProductos.Item("id", dgvProductos.CurrentRow.Index).Value
         Dim respuesta As DialogResult = MessageBox.Show("¿esta seguro de eliminar  " & producto.id.ToString & "?", "advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2)
         If respuesta = Windows.Forms.DialogResult.OK Then
-            producto.Borrar(producto)
+            producto.Eliminar(producto.Id)
         End If
         producto.ConsultarProducto(dgvProductos)
     End Sub

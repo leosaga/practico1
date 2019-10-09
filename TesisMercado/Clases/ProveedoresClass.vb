@@ -46,6 +46,14 @@ Public Class ProveedoresClass
     End Property
 
 
+    Public Sub LlenarTabla(ByVal listado As DataGridView)
+        Dim conex As New Conexion
+        Dim objComando As New SqlCommand("ProductosLlenarTabla", conex.sqlconexion)
+        objComando.CommandType = CommandType.StoredProcedure
+
+    End Sub
+
+
     Public Sub Agregar(ByVal Proveedores As ProveedoresClass)
 
         Dim conex As New Conexion
